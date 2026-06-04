@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.claudemod.vsw_shipfilter.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinRsChannelReceiverBe",
+    "MixinRsChannelReceiverBeSync",
+    "MixinRsChannelManager"
+  ],
+  "client": [
+    "MixinRsChannelReceiverScreen"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
