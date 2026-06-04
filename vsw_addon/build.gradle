@@ -51,13 +51,16 @@ repositories {
         url = 'https://repo.spongepowered.org/repository/maven-public/'
     }
     mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
 
-    compileOnly fg.deobf(files('libs/valkyrienskies-120-2.3.0-beta.12.jar'))
-    compileOnly fg.deobf(files('libs/valkyrien_space_war-0_6_18.jar'))
+    compileOnly fg.deobf('libs:valkyrienskies-120-2.3.0-beta.12:')
+    compileOnly fg.deobf('libs:valkyrien_space_war-0_6_18:')
 }
 
 jar {
