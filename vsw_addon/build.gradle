@@ -39,6 +39,10 @@ mixin {
 
 repositories {
     maven {
+        name = 'MinecraftForge'
+        url = 'https://maven.minecraftforge.net'
+    }
+    maven {
         name = 'Valkyrien Skies'
         url = 'https://maven.valkyrienskies.org'
     }
@@ -46,6 +50,11 @@ repositories {
         name = 'Jitpack'
         url = 'https://jitpack.io'
     }
+    maven {
+        name = 'Sponge / Mixin'
+        url = 'https://repo.spongepowered.org/repository/maven-public/'
+    }
+    mavenCentral()
 }
 
 dependencies {
