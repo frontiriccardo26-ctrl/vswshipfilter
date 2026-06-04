@@ -56,11 +56,8 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
 
-    // Valkyrien Skies 2 dependency (compileOnly - provided at runtime by the user)
-    compileOnly files('libs/valkyrienskies-120-2.3.0-beta.12.jar')
-
-    // The original mod as a dependency (compileOnly)
-    compileOnly files('libs/valkyrien_space_war-0_6_18.jar')
+    compileOnly fg.deobf(files('libs/valkyrienskies-120-2.3.0-beta.12.jar'))
+    compileOnly fg.deobf(files('libs/valkyrien_space_war-0_6_18.jar'))
 }
 
 jar {
