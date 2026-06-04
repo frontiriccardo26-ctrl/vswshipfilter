@@ -1,0 +1,43 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="vsw_shipfilter"
+version="1.0.0"
+displayName="VSW Ship ID Filter"
+description='''
+Addon for Valkyrien Space War.
+Adds a "Ship ID Filter" toggle to the RsChannel Receiver block.
+When enabled, the receiver only responds to signals sent from a Sender
+on the same Valkyrien Skies ship, preventing cross-ship channel interference
+when copying ships.
+'''
+
+[[dependencies.vsw_shipfilter]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.vsw_shipfilter]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.vsw_shipfilter]]
+    modId="valkyrien_space_war"
+    mandatory=true
+    versionRange="[0.6.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.vsw_shipfilter]]
+    modId="valkyrienskies"
+    mandatory=true
+    versionRange="[2.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
